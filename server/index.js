@@ -17,6 +17,7 @@ const connectMongoDB = async () => {
     }
 };
 connectMongoDB();
+
 app.get("/products",async (req, res) => {
     const FindProduct= await product.find();
     res.json({

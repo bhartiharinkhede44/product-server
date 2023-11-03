@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <ProductDetail />
     },
     {
-        path: '/updateproduct/:id',
+        path: '/updateproduct/:_id',
         element: <UpadateProduct />
     }
 ])

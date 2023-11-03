@@ -6,7 +6,7 @@ import axios from 'axios'
 
 function ProductDetail() {
 const [product,setProduct]=useState({});
-const {_id}=useParams();
+const {_id}= useParams();
 
 const loadProduct =async () =>{
  const response= await axios.get(`/product/${_id}`);
