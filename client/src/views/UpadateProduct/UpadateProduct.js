@@ -37,7 +37,7 @@ function UpadateProduct() {
 
         }
         const response = await axios.put(`/product/${_id}`, updateDetails)
-        alert(response?.data?.data);
+        alert(response?.data?.message);
         window.location.href="/";
     }
 
